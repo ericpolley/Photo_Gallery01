@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(26, 11, 11);
+}
+
+.imggallery {
+   display:grid;
+   align-items: center;
+   justify-content: center;
+   border: 5px solid red;
+   background-color: brown;
+  
+   /* how many rows from top to bottom. 
+   grid-template-rows: 1fr 1fr 1fr;
+   /* how many columns from left to right 
+   setting them to percentages will alow shrink of gallery while resizing window*/
+
+
+  grid-template-columns:  repeat(3, 20%) 40%;
+  grid-auto-rows: 310px;
+  margin: 40px;
+  padding: 10px;
+
+
+}
+
+.imgs {
+   border: 5px solid black;
+   height: 299px;
+      /* this prevents the image from manipulating the size of its container */
+      max-width: 99%; 
+      
+
+    /*this will make the image full size inside its container */
+    object-fit: cover;
+    background-color: rgb(207, 98, 98);
+}
+
+.galleryimg {
+    /*sets the images to be manipulated by the grid */
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+p, h1{
+    color: rgb(192, 144, 144);
+    text-align: center;
+}
